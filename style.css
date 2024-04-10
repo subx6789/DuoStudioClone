@@ -1,0 +1,244 @@
+@font-face {
+    font-family: a;
+    src: url(./Assets/ppmori.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: a;
+    color: #fff;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #edbfff;
+    z-index: 8;
+    transition: background-image ease-in;
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: difference;
+}
+.main{
+    background-color: #0f0d0d;
+}
+.page1{
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+    padding-top: 12vw;
+    z-index: 9;
+}
+#nav{
+    display: flex;
+    height: 55px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index: 99;
+}
+#nav>img{
+    height: 26px;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+#nav-part2>h4{
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#nav-part2>h4:nth-child(1){
+    border-bottom: 1.5px solid #fff;
+}
+.page1>h1{
+    font-size: 8vw;
+    font-weight: 300;
+    margin-left: 6vw;
+    letter-spacing: none;
+}
+.page1>h2{
+    font-size: 8vw;
+    font-weight: 300;
+    margin-left: 26vw;
+    letter-spacing: none;
+}
+.page1>video{
+    width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10vw;
+}
+.page2{
+    min-height: 70vh;
+    width: 100%;
+    padding: 100px 5vw;
+    border-bottom: 2px solid #6c6c6c;
+    position: relative;
+    z-index: 9;
+}
+.page2>h1{
+    font-size: 7vw;
+    font-weight: 500;
+    color: #111;
+}
+.page2-container{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page2-left{
+    width: 40%;
+}
+.page2-left>h2{
+    font-size: 4vw;
+    font-weight: 300;
+    color: #111;
+    line-height: 4vw;
+}
+.page2-right{
+    width: 24%;
+}
+.page2-right>p{
+    font-size: 28px;
+    color: #111;
+}
+.page2-right>button{
+    width: 100%;
+    border-radius: 50px;
+    font-size: 1vw;
+    border: none;
+    padding: 10px 0;
+    background-color: #edbfff;
+    color: #111;
+    margin-top: 20px;
+}
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
+    position: relative;
+    z-index: 9;
+}
+.page3>h1{
+    font-size: 6.8vw;
+    font-weight: 300;
+    color: #111;
+    margin-left: 100px;
+}
+.page3-part1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.page3-part1>img{
+    height: 600px;
+    margin-top: 100px;
+}
+.page3-part1>img:nth-child(1){
+    margin-top: 300px;
+}
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding: 190px 90px;
+}
+.elem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+.text-div{
+    height: 145px;
+    overflow: hidden;
+}
+.elem>.text-div>h1{
+    color: #fff;
+    font-size: 7.5vw;
+    font-weight: 600;
+    transition: all ease-out 0.5s;
+}
+.elem>img{
+    position: absolute;
+    opacity: 0;
+    transform: translateY(10%) rotate(5deg);
+    transition: all ease-out 0.5s;
+}
+.elem>img:nth-child(1){
+    left: 1%;
+}
+.elem>img:nth-child(3){
+    right: 1%;
+}
+.elem:hover h1{
+    transform: translateY(-100%);
+    color: #edbfff;
+}
+.elem:hover img{
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+}
+.page5{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding: 140px 100px;
+}
+.page5>h2{
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0px 20px;
+    border-top: 2px solid #dadada;
+}
+.box:nth-last-child(1){
+    border-bottom: 2px solid #dadada;
+}
+footer{
+    height: 40vh;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+footer>h1{
+    font-size: 1vw;
+    font-weight: 300;
+}
+footer>h1>a{
+    text-decoration: none;
+    color: skyblue;
+}
